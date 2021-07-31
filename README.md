@@ -3,7 +3,7 @@
 
 Projeto Prático com Banco de Dados e Mongo db
 
-Descrição do Projeto 🔠
+Descrição do Projeto: 
 Você deve criar um banco de dados novo (database) e uma coleção com um nome pertinente, de acordo com os dados e tema que você escolher. Os seguintes comandos devem ser feitos e entregues:
 
 Inserção de documentos
