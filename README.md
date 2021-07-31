@@ -19,7 +19,7 @@ Inicializei o mongo db através do terminal windows (Prompt de Comando) e inicie
 ##Inserção de documentos na collection
 Criei um arquivo json de filmes que gosto e inclui na collection que nomei de "filmes"
 
-db.filmes.insertMany( [
+db.filmes.insertMany([
     {
     
         "nome": "",
@@ -53,6 +53,7 @@ db.filmes.insertMany( [
     ])
     
 ##Atualização de documentos
+
 db.getCollection('filmes').update(
     {
         "Nome": ""
@@ -67,14 +68,14 @@ db.getCollection('filmes').update(
 db.filmes.remove({"Ano": ""})
 
 ##Consulta com projeção
-Séries ordenadas do ano mais recente ao mais antigo.
+Filmes ordenados do ano mais recente ao mais antigo.
 
 db.getCollection("filmes").find().sort({"Ano": -1})
-Séries ordenadas do ano mais antigo ao mais recente.
+Filmes ordenados do ano mais antigo ao mais recente.
 
 db.getCollection("filmes").find().sort({"Ano": 1})
 Consulta utilizando combinação entre os seletores
-db.getCollection("series").find({"Gênero":"","Ano":""})
+db.getCollection("filmes").find({"Genero":"","Ano":""})
 Consulta paginada e ordenada
 Consulta pela classificação, limitando a dois filmes.
 
